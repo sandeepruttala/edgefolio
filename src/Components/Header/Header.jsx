@@ -11,6 +11,10 @@ function Header({ name = "John Doe" }) {
     setMenuOpen(!menuOpen)
   }
 
+  const handleLinkClick = () => {
+    setMenuOpen(false)
+  }
+
   return (
     <div className="header">
       <span className="logo">
@@ -22,11 +26,11 @@ function Header({ name = "John Doe" }) {
         <span className="bar"></span>
       </div>
       <div className={`menu ${menuOpen ? 'open' : ''}`}>
-        <Link to="about" spy={true} smooth={true} duration={500}><Pill content="About" /></Link>
-        <Link to="skills" spy={true} smooth={true} duration={500}><Pill content="Skills" /></Link>
-        <Link to="projects" spy={true} smooth={true} duration={500}><Pill content="Projects" /></Link>
-        <Link to="certifications" spy={true} smooth={true} duration={500}><Pill content="Certifications" /></Link>
-        <Link to="contact" spy={true} smooth={true} duration={500}><Pill content="Contact" /></Link>
+        <Link onClick={handleLinkClick} to="about" spy={true} smooth={true} duration={500}><Pill content="About" /></Link>
+        <Link onClick={handleLinkClick} to="skills" spy={true} smooth={true} duration={500}><Pill content="Skills" /></Link>
+        <Link onClick={handleLinkClick} to="projects" spy={true} smooth={true} duration={500}><Pill content="Projects" /></Link>
+        <Link onClick={handleLinkClick} to="certifications" spy={true} smooth={true} duration={500}><Pill content="Certifications" /></Link>
+        <Link onClick={handleLinkClick} to="contact" spy={true} smooth={true} duration={500}><Pill content="Contact" /></Link>
       </div>
     </div>
   )
