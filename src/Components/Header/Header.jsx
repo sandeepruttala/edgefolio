@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../../Global.css'
 import './Header.css'
 import Pill from '../Pill/Pill'
+import { Link } from 'react-scroll'
 
 function Header({ name = "John Doe" }) {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -21,10 +22,11 @@ function Header({ name = "John Doe" }) {
         <span className="bar"></span>
       </div>
       <div className={`menu ${menuOpen ? 'open' : ''}`}>
-        <a href="#about"><Pill content="About" /></a>
-        <a href="#skills"><Pill content="Skills" /></a>
-        <a href="#projects"><Pill content="Projects" /></a>
-        <a href="#contact"><Pill content="Contact" /></a>
+        <Link to="about" spy={true} smooth={true} duration={500}><Pill content="About" /></Link>
+        <Link to="skills" spy={true} smooth={true} duration={500}><Pill content="Skills" /></Link>
+        <Link to="projects" spy={true} smooth={true} duration={500}><Pill content="Projects" /></Link>
+        <Link to="certifications" spy={true} smooth={true} duration={500}><Pill content="Certifications" /></Link>
+        <Link to="contact" spy={true} smooth={true} duration={500}><Pill content="Contact" /></Link>
       </div>
     </div>
   )
