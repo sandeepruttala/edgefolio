@@ -1,6 +1,6 @@
 .certificate {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 1rem;
   padding-left: 1rem;
@@ -16,6 +16,7 @@
 }
 
 .certificate-from{
+  width: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +32,7 @@
 
 
 .certificate-link{
+  width: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;

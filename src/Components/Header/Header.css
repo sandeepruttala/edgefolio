@@ -52,15 +52,19 @@
     .header {
         height: 10dvh;
     }
+
+.header span{
+    font-size: 1.3rem;
+}
     .header .menu {
-        display: none; /* Hide menu initially on mobile */
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         position: absolute;
         top: 10dvh;
         height: 90dvh;
-        background-color: white;
+        background-color: var(--primary);
         width: 100dvw;
         padding: 20px;
         z-index: 1000;
