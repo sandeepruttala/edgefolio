@@ -1,0 +1,12 @@
+.certifications{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.certifications h1{
+padding: 40px;
+text-align: center;
+}

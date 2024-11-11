@@ -1,0 +1,33 @@
+.interests{
+    width: 50%;
+    border: var(--border);
+    min-height: 630px;
+}
+
+.interests h2{
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.interests-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+    
+    .interests{
+        min-height: fit-content;
+        width: 100%;
+    }
+    
+    .interests h2{
+        font-size: 1.5rem;
+    }
+    
+}

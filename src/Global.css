@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pixelify+Sans:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* variables */
+:root{
+    --border: 1px solid black;
+    --primary: white;
+    --secondary: black;
+    --mid: rgb(240, 240, 240);
+}
+
+.dark-mode{
+    --primary: rgb(30, 30, 30);
+    --secondary: white;
+    --mid: rgb(50, 50, 50);
+    background-color: var(--primary);
+    color: var(--secondary);
+    --border: 1px solid white;
+}
+
+/* global styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+input, textarea{
+    outline: none;
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    
+}

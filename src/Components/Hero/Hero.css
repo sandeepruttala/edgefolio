@@ -1,0 +1,108 @@
+.hero{
+    margin-top: 10dvh;
+    padding: 50px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90dvh;
+    margin-bottom: 50px;
+}
+
+.hero .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.hero .avatar{
+    width: 300px;
+    height: 300px;
+    border: var(--border);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.hero .avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero-content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.role{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.description{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.description span{
+    font-size: 1.3rem;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/* media queries for smaller screens */
+@media screen and (max-width: 768px){
+    .hero{
+        margin-top: 10dvh;
+        padding: 0px;
+        height: 90dvh;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .avatar{
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-content{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .role{
+        margin-bottom: 10px;
+    }
+
+    .description{
+        padding: 0 25px;
+    }
+
+    .description h1{
+        font-size: 2rem;
+    }
+
+    .description span{
+        font-size: 1rem;
+    }
+}

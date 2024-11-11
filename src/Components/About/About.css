@@ -1,0 +1,29 @@
+.about{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about h1{
+    padding: 40px;
+    text-align: center;
+}
+
+.about-description{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+    
+    .about-description{
+        flex-direction: column;
+    }
+    
+}

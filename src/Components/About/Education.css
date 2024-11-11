@@ -1,0 +1,28 @@
+.education{
+    width: 50%;
+    border: var(--border);
+    min-height: 630px;
+}
+
+.education h2{
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    
+    .education{
+        min-height: fit-content;
+        width: 100%;
+    }
+    
+    .education h2{
+        font-size: 1.5rem;
+    }
+
+    .education-description{
+        flex-direction: column;
+    }
+    
+}

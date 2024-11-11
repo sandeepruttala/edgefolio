@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--secondary);
+    height: 200px;
+    padding: 30px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 0.8rem;
+    color: var(--mid);
+}

@@ -1,0 +1,28 @@
+.pill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 20px;
+    padding: 12px 15px;
+    border: var(--border);
+    border-radius: 25px;
+    margin: 5px 5px;
+    color: var(--secondary);
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+.pill:hover{
+    color: var(--primary);
+    background-color: var(--secondary);
+    transition: 0.3s ease-in-out;
+}
+
+/* media queries for smaller screens */
+@media screen and (max-width: 768px){
+    .pill{
+        font-size: 0.8rem;
+    }
+    
+}

@@ -1,0 +1,29 @@
+.projects{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+}
+
+.projects h1{
+    padding: 40px;
+    text-align: center;
+}
+
+.projects-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+        .projects h1{
+            font-size: 2rem;
+            padding: 20px;
+        }
+        
+    }

@@ -1,0 +1,74 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10dvh;
+    border-bottom: var(--border);
+    background-color: var(--primary);
+    z-index: 1000;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.header span{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secondary);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Show the hamburger menu on smaller screens */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 10dvh;
+    }
+    .header .menu {
+        display: none; /* Hide menu initially on mobile */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 10dvh;
+        height: 90dvh;
+        background-color: white;
+        width: 100dvw;
+        padding: 20px;
+        z-index: 1000;
+    }
+    .header .menu.open {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}

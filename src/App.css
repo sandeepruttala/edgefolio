@@ -1,0 +1,27 @@
+
+body{
+    background-color: var(--primary);
+}
+.mode-toggle {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 1000;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: var(--border);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .mode-toggle {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+}
+  
