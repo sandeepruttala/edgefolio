@@ -8,6 +8,7 @@ Check out the live version: [sandeepruttala.github.io/edgefolio/](sandeepruttala
 ## ✨ Features
 - **Responsive Design**: Optimized for mobile and desktop views.
 - **Easy Customization**: Modify data to fit your personal profile just by changing function parameters or props.
+- **Dark Mode**: Dark Mode Available.
 - **React Components**: Organized code structure for quick editing and expansion.
 - **Dynamic Project Showcase**: Easily add and manage project entries.
 
