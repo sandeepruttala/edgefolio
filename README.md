@@ -3,7 +3,7 @@
 A modern, responsive portfolio template built with React JS, designed to showcase skills, projects, and achievements effectively. This template provides a clean and minimalistic design suitable for students and developers.
 
 ## 🌐 Live Demo
-Check out the live version: [sandeepruttala.github.io/edgefolio/](sandeepruttala.github.io/edgefolio/)
+Check out the live version: [https://sandeepruttala.github.io/edgefolio/](sandeepruttala.github.io/edgefolio/)
 
 ## ✨ Features
 - **Responsive Design**: Optimized for mobile and desktop views.
