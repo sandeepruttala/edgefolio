@@ -12,11 +12,10 @@ import Footer from './Components/Footer/Footer';
 import './App.css';
 import './Global.css';
 
-function App() {
+function App(card) {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    // Load dark mode preference from localStorage
     const savedMode = localStorage.getItem('darkMode') === 'true';
     setDarkMode(savedMode);
   }, []);
@@ -24,25 +23,25 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode(prevMode => {
       const newMode = !prevMode;
-      localStorage.setItem('darkMode', newMode); // Persist to localStorage
+      localStorage.setItem('darkMode', newMode);
       return newMode;
     });
   };
 
   return (
-    <div className={darkMode ? 'dark-mode' : 'light-mode'}>
-      <button className="mode-toggle" onClick={toggleDarkMode}>
-        <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
-      </button>
-      <Header />
-      <Hero />
-      <Skills />
-      <Projects />
-      <About />
-      <Certifications />
-      <Contact />
-      <Footer />
-    </div>
+      <div className={darkMode ? 'dark-mode' : 'light-mode'}>
+        <button className="mode-toggle" onClick={toggleDarkMode}>
+          <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
+        </button>
+        <Header />
+        <Hero card={card} />
+        <Skills />
+        <Projects />
+        <About />
+        <Certifications />
+        <Contact />
+        <Footer />
+      </div>
   );
 }
 

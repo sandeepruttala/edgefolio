@@ -7,7 +7,7 @@
     padding: 12px 15px;
     border: var(--border);
     border-radius: 25px;
-    margin: 5px 5px;
+    margin: 5px 5px 5px 0px;
     color: var(--secondary);
     background-color: var(--primary);
     cursor: pointer;
@@ -19,7 +19,16 @@
     transition: 0.3s ease-in-out;
 }
 
-/* media queries for smaller screens */
+.invert {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+.invert:hover{
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
 @media screen and (max-width: 768px){
     .pill{
         font-size: 0.8rem;

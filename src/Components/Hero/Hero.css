@@ -9,8 +9,32 @@
     margin-bottom: 50px;
 }
 
+.toggle{
+    position: absolute;
+    top: 12dvh;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--border);
+    border-radius: 25px;
+}
+
+.toggle .wide, .toggle .narrow{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.toggle .active{
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
 .hero .image{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 30%;
@@ -64,6 +88,11 @@
 }
 /* media queries for smaller screens */
 @media screen and (max-width: 768px){
+
+    .toggle{
+        display: none;
+    }
+
     .hero{
         margin-top: 10dvh;
         padding: 0px;
