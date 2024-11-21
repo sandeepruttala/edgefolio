@@ -41,13 +41,13 @@
 
 .menu-toggle .bar {
     width: 25px;
-    height: 3px;
+    height: 2px;
     background-color: var(--secondary);
-    margin: 4px 0;
+    margin: 3px 0;
     transition: 0.4s;
 }
 
-/* Show the hamburger menu on smaller screens */
+
 @media screen and (max-width: 768px) {
     .header {
         height: 10dvh;
