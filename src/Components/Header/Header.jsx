@@ -17,9 +17,11 @@ function Header({ name = "John Doe" }) {
 
   return (
     <div className="header">
+      <Link onClick={handleLinkClick} to="hero" spy={true} smooth={true} duration={500}>
       <span className="logo">
         {`<${name} />`}
       </span>
+      </Link>
       <div className="menu-toggle" onClick={toggleMenu}>
         <span className="bar"></span>
         <span className="bar"></span>

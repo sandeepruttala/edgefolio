@@ -1,9 +1,7 @@
-import React, { useState } from "react";
 import "../../Global.css";
 import Avatar from "../../Assets/profile.png";
 import "./Hero.css";
 import Pill from "../Pill/Pill";
-import Card from "../Card/Card";
 
 function Hero({
   name = "John Doe",
@@ -15,24 +13,9 @@ function Hero({
   github = "https://github.com/johndoe",
   resume = "https://resume.com",
 }) {
-  const [cardVisibility, setCardVisibility] = useState(false);
-
-  const handleMode = () => {
-    const card = document.querySelector('.wide');
-    const hero = document.querySelector('.narrow');
-    card.classList.toggle('active');
-    hero.classList.toggle('active');
-    setCardVisibility(!cardVisibility);
-  }
 
   return (
     <div className="hero">
-      <div className="toggle">
-          <div className={`wide ${!cardVisibility ? 'active' : ''}`} onClick={handleMode}>Classic</div>
-          <div className={`narrow ${cardVisibility ? 'active' : ''}`} onClick={handleMode}>Card</div>
-      </div>
-      <Card name={name} role={role} description={description} email={email} mobile={mobile} linkedin={linkedin} github={github} resume={resume} 
-      visible={cardVisibility}/>
       <div className="image">
         <div className="avatar">
           <img src={Avatar} alt="Avatar" />
