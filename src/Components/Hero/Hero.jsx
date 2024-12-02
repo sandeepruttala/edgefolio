@@ -6,7 +6,7 @@ import Pill from "../Pill/Pill";
 function Hero({
   name = "John Doe",
   role = "Software Developer",
-  description = "I am a software developer with a passion for creating web applications. I have experience working with JavaScript, React, and Node.js. I am currently seeking new opportunities to grow my skills and contribute to a team.",
+  description = "A software developer with a passion for creating web applications. I have experience working with JavaScript, React, and Node.js. I am currently seeking new opportunities to grow my skills and contribute to a team.",
   email = "johndoe@mail.com",
   mobile = "+ 123-456-7890",
   linkedin = "https://linkedin.com/in/johndoe",

@@ -10,6 +10,11 @@
     border-bottom: var(--border);
     background-color: var(--primary);
     z-index: 1000;
+    transition: all 1s ease;
+}
+
+.hide {
+    display: none !important;
 }
 
 .header .logo {
