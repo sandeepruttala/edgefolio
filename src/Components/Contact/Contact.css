@@ -29,6 +29,7 @@ text-align: center;
     border-radius: 5px;
     color: var(--secondary);
     background-color: var(--primary);
+    font-size: 1rem;
 }
 
 .contact form textarea{
@@ -38,6 +39,7 @@ text-align: center;
     border-radius: 5px;
     color: var(--secondary);
     background-color: var(--primary);
+    font-size: 1rem;
 }
 
 .contact form button{

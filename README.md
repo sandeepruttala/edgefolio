@@ -51,5 +51,8 @@ To deploy this portfolio on platforms like GitHub Pages or Vercel:
    ```
 2. Follow the platform-specific instructions for deployment.
 
+## Contact Form API
+The contact form in this template uses [Formspree](https://formspree.io/) to send emails. To receive form submissions, you need to set up your Formspree account and update the form endpoint in the `Components/Contact.jsx` file.
+
 ## 🤝 Contributing
 Feel free to open issues or submit pull requests if you have suggestions for improvements.
