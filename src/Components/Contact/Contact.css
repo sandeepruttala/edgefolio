@@ -1,4 +1,4 @@
-.contact{
+.contact {
     height: fit-content;
     width: 100%;
     display: flex;
@@ -7,12 +7,12 @@
     align-items: center;
 }
 
-.contact h1{
-padding: 40px;
-text-align: center;
+.contact h1 {
+    text-align: center;
+    padding: 12dvh 40px 40px 40px;
 }
 
-.contact form{
+.contact form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ text-align: center;
     margin-top: 20px;
 }
 
-.contact form input{
+.contact form input {
     width: 50%;
     padding: 10px;
     border: var(--border);
@@ -32,7 +32,7 @@ text-align: center;
     font-size: 1rem;
 }
 
-.contact form textarea{
+.contact form textarea {
     width: 50%;
     padding: 10px;
     border: var(--border);
@@ -42,7 +42,7 @@ text-align: center;
     font-size: 1rem;
 }
 
-.contact form button{
+.contact form button {
     width: 50%;
     padding: 10px;
     border: none;
@@ -52,21 +52,21 @@ text-align: center;
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
-    .contact h1{
+@media screen and (max-width: 768px) {
+    .contact h1 {
         font-size: 2rem;
         padding: 20px;
     }
 
-    .contact form input{
+    .contact form input {
         width: 70%;
     }
 
-    .contact form textarea{
+    .contact form textarea {
         width: 70%;
     }
 
-    .contact form button{
+    .contact form button {
         width: 70%;
     }
 }
