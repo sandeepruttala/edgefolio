@@ -13,7 +13,7 @@ function Skills({
 }) {
   return (
     <div className="skills">
-      <h1>{`<Skills />`}</h1>
+      <h1 className='heading'>{`<Skills />`}</h1>
       <div className="skills-description">
       <SkillContainer
         title="Programming Languages"

@@ -48,6 +48,11 @@ input, textarea{
     outline: none;
 }
 
+.heading{
+    padding: 12dvh 40px 40px 40px;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px){
     h1{
         font-size: 2rem;

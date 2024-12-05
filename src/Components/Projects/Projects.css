@@ -1,14 +1,10 @@
 .projects{
         height: fit-content;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-}
-
-.projects h1{
-    padding: 12dvh 40px 40px 40px;
-    text-align: center;
 }
 
 .projects-description{

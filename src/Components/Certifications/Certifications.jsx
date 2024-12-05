@@ -21,7 +21,7 @@ function Certifications({certifications = [
 ]}) {
   return (
     <div className="certifications">
-        <h1>{"<Certifications />"}</h1>
+        <h1 className='heading'>{"<Certifications />"}</h1>
         <div className="certificates">
             {certifications.map((certificate, index) => (
                 <Certificate key={index} certificate={certificate} />

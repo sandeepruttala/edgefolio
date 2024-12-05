@@ -8,7 +8,7 @@ import Hobbies from "./Hobbies";
 function About() {
   return (
     <div className="about">
-      <h1>{"<About />"}</h1>
+      <h1 className='heading'>{"<About />"}</h1>
       <div className="about-description">
         <Education />
         <Interests interests={["Web Development", "Machine Learning", "Data Science", "Cybersecurity"
