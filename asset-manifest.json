@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/edgefolio/static/css/main.54e4cdae.css",
-    "main.js": "/edgefolio/static/js/main.cdb8ea01.js",
+    "main.css": "/edgefolio/static/css/main.a732512a.css",
+    "main.js": "/edgefolio/static/js/main.15faf679.js",
     "static/media/profile.png": "/edgefolio/static/media/profile.e08a390c2c24d438f2e6.png",
     "index.html": "/edgefolio/index.html",
-    "main.54e4cdae.css.map": "/edgefolio/static/css/main.54e4cdae.css.map",
-    "main.cdb8ea01.js.map": "/edgefolio/static/js/main.cdb8ea01.js.map"
+    "main.a732512a.css.map": "/edgefolio/static/css/main.a732512a.css.map",
+    "main.15faf679.js.map": "/edgefolio/static/js/main.15faf679.js.map"
   },
   "entrypoints": [
-    "static/css/main.54e4cdae.css",
-    "static/js/main.cdb8ea01.js"
+    "static/css/main.a732512a.css",
+    "static/js/main.15faf679.js"
   ]
 }
