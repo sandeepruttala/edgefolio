@@ -9,11 +9,13 @@ import About from './Components/About/About';
 import Certifications from './Components/Certifications/Certifications';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
+import { useData } from './hooks/useData';
 import './App.css';
 import './Global.css';
 
-function App(card) {
+function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const { data, loading, error } = useData();
 
   useEffect(() => {
     const savedMode = localStorage.getItem('darkMode') === 'true';
@@ -28,20 +30,23 @@ function App(card) {
     });
   };
 
+  if (loading) return <div className="loading">Loading...</div>;
+  if (error) return <div className="error">Error: {error}</div>;
+
   return (
-      <div className={darkMode ? 'dark-mode' : 'light-mode'}>
-        <button className="mode-toggle" onClick={toggleDarkMode}>
-          <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
-        </button>
-        <Header />
-        <Hero card={card} />
-        <Skills />
-        <Projects />
-        <About />
-        <Certifications />
-        <Contact />
-        <Footer />
-      </div>
+    <div className={darkMode ? 'dark-mode' : 'light-mode'}>
+      <button className="mode-toggle" onClick={toggleDarkMode}>
+        <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
+      </button>
+      <Header name={data?.hero?.name} />
+      <Hero {...data?.hero} />
+      <Skills {...data?.skills} />
+      <Projects projects={data?.projects} />
+      <About educationEvents={data?.education} interests={data?.interests} hobbies={data?.hobbies} />
+      <Certifications certifications={data?.certifications} />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

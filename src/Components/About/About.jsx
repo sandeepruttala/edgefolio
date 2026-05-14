@@ -5,15 +5,14 @@ import Education from "./Education";
 import Interests from "./Interests";
 import Hobbies from "./Hobbies";
 
-function About() {
+function About({ educationEvents = [], interests = [], hobbies = [] }) {
   return (
     <div className="about">
       <h1 className='heading'>{"<About />"}</h1>
       <div className="about-description">
-        <Education />
-        <Interests interests={["Web Development", "Machine Learning", "Data Science", "Cybersecurity"
-        , "Mobile Development", "Artificial Intelligence", "Blockchain", "Quantum Computing", "Internet of Things", "Cloud Computing"]} />
-        <Hobbies hobbies={["Reading", "Writing", "Drawing", "Painting", "Playing Guitar", "Playing Piano", "Playing Video Games", "Watching Movies", "Watching TV Shows", "Listening to Music"]} />
+        <Education educationEvents={educationEvents} />
+        <Interests interests={interests} />
+        <Hobbies hobbies={hobbies} />
       </div>
     </div>
   );
