@@ -16,14 +16,30 @@ Check out the live version: [https://sandeepruttala.github.io/edgefolio/](https:
 - **React Components**: Organized code structure for quick editing and expansion.
 - **Dynamic Project Showcase**: Easily add and manage project entries.
 
+## � Quick Start
+
+Make your portfolio yours **in seconds**:
+
+1. Open `/public/data.json`
+2. Update your information:
+   - Your name, role, description
+   - Email, phone, LinkedIn, GitHub links
+   - Education, interests, hobbies
+   - Skills by category
+   - Projects and certifications
+3. Save the file - your portfolio updates instantly!
+
+**No coding needed!** Just edit the JSON file and watch your portfolio transform.
+
 ## 📂 Project Structure
 
 Here's a quick overview of the key files and folders:
 
 - `public/` - Contains static files and images.
+  - `data.json` - **Your portfolio data** - Edit this to customize everything!
 - `src/` - Main React code with component files and styling.
   - `components/` - Reusable components (Header, About, Projects, etc.)
-  - `App.js` - Main app component where the layout is structured.
+  - `App.jsx` - Main app component where the layout is structured.
   - `index.js` - Entry point for the React app.
 
 ## 🛠️ Installation
@@ -42,45 +58,34 @@ Here's a quick overview of the key files and folders:
    ```
 4. Run the development server:
    ```bash
-   npm start
+   npm run dev
    ```
+5. Open your browser and go to `http://localhost:3000/edgefolio/`
 
 ## 📋 Usage
 
-Customize the content in the `src/components/` folder. Update information each section (like `About`, `Projects`, etc.) by changing function parameters or props to reflect your personal information and achievements.
+Customize your portfolio in seconds:
+
+1. **Edit your data**: Open `public/data.json` and update all your information
+2. **See changes instantly**: The site updates automatically every 5 seconds during development
+3. **No code changes needed**: All portfolio content comes from `data.json`
+
+Check out [DATA_MANAGEMENT.md](DATA_MANAGEMENT.md) for detailed examples and structure information.
 
 ## 🚀 Deployment
 
 To deploy this portfolio on GitHub Pages:
 
-1. Install the `gh-pages` package as a development dependency:
+1. The `homepage` and deployment scripts are already configured in `package.json`
 
-   ```bash
-   npm install gh-pages --save-dev
-   ```
-
-2. Add the following `homepage` field to your `package.json` file:
-
-   ```json
-   "homepage": "https://<your-github-username>.github.io/<repository-name>"
-   ```
-
-3. Update the `scripts` section in `package.json`:
-
-   ```json
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build"
-   }
-   ```
-
-4. Deploy the project to GitHub Pages:
-
+2. Deploy the project to GitHub Pages:
    ```bash
    npm run deploy
    ```
 
-5. Your portfolio will now be live at `https://<your-github-username>.github.io/<repository-name>`.
+3. Your portfolio will now be live at `https://<your-github-username>.github.io/edgefolio/`
+
+**Note**: Make sure to update your data in `public/data.json` before deploying for the best results!
 
 ## Contact Form API
 
